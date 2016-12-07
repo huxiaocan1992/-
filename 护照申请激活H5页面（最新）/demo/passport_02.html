@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title></title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../lib/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+    </head>
+    
+    <body ontouchstart>
+    	<div class="mp">
+        <header class="ui-header ui-header-positive ui-border-b">
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>公益护照申领</h1>
+        </header>
+       
+        <section class="ui-container">
+
+			<h2 class="IDtit">身份认证</h2>
+		<section id="form">
+            <div class="ui-form ui-border-t">
+                <form action="#">
+                	<div class="ui-form-item ui-border-b">
+                        <label class="">
+                        	姓名<i class="ui-txt-red">*</i>
+                        </label>
+                        <input type="text" placeholder="请输入姓名" />                       
+                    </div>
+                    <div class="ui-form-item ui-border-b">  
+	                	<label class="">
+	                	证件类型<i class="ui-txt-red">*</i>
+	                	</label>                      
+                        <div class="ui-select xc_option">
+                            <select id="xc_idSelect">
+                                <option selected value="0">身份证</option>
+                                <option value="1">军官证</option>
+                                <option value="2">护照</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-form-item ui-border-b">
+                        <label>
+                          	证件号码<i class="ui-txt-red">*</i>
+                        </label>
+                        <input id="xc_idNum" type="text" placeholder="请输入证件号码" />
+                    </div>
+                    <div class="ui-form-item ui-border-b xc_birthDate">
+                        <label>
+                        	出生日期<i class="ui-txt-red">*</i>
+                        </label>
+                        <input id="birthDate" type="text" value="" placeholder="请输入出生日期" />
+                    </div>
+                    <div class="ui-form-item  ui-border-b xc_sex">
+                        <div class="fl" style="width: 30%;">
+                        	性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别<i class="ui-txt-red">*</i>
+                        </div>
+                        <div class="fl" style="width: 70%;">
+                        	<label class="ui-radio" for="radio">
+                            	<input id="sex_man" type="radio" name="sex">男
+	                        </label>	                        
+	                        <label class="ui-radio" for="radio">
+	                            <input id="sex_woman" type="radio" name="sex">女
+	                        </label>
+                        </div>
+                    </div>
+                    <div class="ui-form-item ui-border-b">
+                    	<label class="">
+	                	申领类别<i class="ui-txt-red">*</i>
+	                	</label>
+                        <div class="ui-select xc_option">
+                            <select class="xc_select_js">
+                                <option selected value="0">首次申请</option>
+                                <option value="1">换发护照</option>
+                              	<option value="2">补发护照</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ui-form-item xc_select_yy ">
+                        <div class="fl" style="width: 30%;">
+                        	原&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因<i class="ui-txt-red">*</i>
+                        </div>
+                        <div class="fl" style="width: 70%;">
+                        	<div id="">
+                        		<label class="ui-radio" for="radio">
+                        			<input type="radio" name="sex">原护照丢失
+                        		</label>
+	                        </div>
+	                        <div id="">
+	                        	<label class="ui-radio" for="radio">
+	                        		<input type="radio" name="sex">原护照被盗或损毁
+	                        	</label>
+	                        </div>
+                        </div>
+                    </div>
+                    <div class="xc_btn_position">
+                		<button class="xc_btn"><a href="#">下一步</a></button>
+                	</div>                    
+                </form>
+            </div>
+		    
+		</section>
+
+        </section><!-- /.ui-container-->
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });
+        $('.ui-header .ui-btn').click(function(){
+            location.href= 'index.html';
+        });
+        
+        //身份证判别
+        function IDjudge(){
+            if ($("#xc_idSelect").val()==0) {
+                $(".xc_birthDate").hide();
+                $(".xc_sex").hide();
+                birthChecked();
+            }else{
+                
+                $(".xc_birthDate").show();
+                $("#birthDate").val("");
+                $(".fl input").removeAttr("checked");
+                $(".xc_sex").show();
+                
+                // $("#sex_woman").removeAttr("checked");
+            }
+        }
+        function IDjudge1(){
+            if ($("#xc_idSelect").val()==0 && $("#xc_idNum").val().length==18) {
+                $(".xc_birthDate").hide();
+                $(".xc_sex").hide();
+                birthChecked();
+            }else{
+                $(".xc_birthDate").show();
+                $("#birthDate").val("");
+                $(".fl input").removeAttr("checked");
+                $(".xc_sex").show();
+                
+                // $("#sex_woman").removeAttr("checked");
+            }
+        }
+
+        $(function(){        	
+        	$(".xc_birthDate").hide();
+        	$(".xc_sex").hide();
+        	
+        	$("#xc_idSelect").change(function(){
+        		IDjudge();
+        	})
+        	$(".xc_select_yy").hide();
+        	$(".xc_select_js").change(function(){
+        	if($(".xc_select_js").val()=="0"){
+        		$(".xc_select_yy").hide();
+        	}else{
+        		$(".xc_select_yy").show();
+        	}
+        })
+        })
+        //出生日期
+        function birthChecked(){
+            var IDNumber = $("#xc_idNum").val();
+            var birth_date = "";
+            birth_date = IDNumber.substring(6, 14);
+            $("#birthDate").val(birth_date);
+        }
+        // 选择性别
+        function sexChecked() {
+            var applicant_sex = null;
+            var psidno = $("#xc_idNum").val();
+            var last = psidno[psidno.length - 2];
+            if (last % 2 != 0) {
+                console.log("男")
+                // $("#sex_man").click().attr("disabled");
+                $("#sex_man").attr("checked","checked");
+            } else {
+                console.log("女")
+                // $("#sex_woman").click().attr("disabled");
+                $("#sex_woman").attr("checked","checked");
+            }
+            
+        }
+        // 身份验证
+        function authentication() {
+            var pattern = /^([1-9]{1})([0-7]{1})(\d{13}$|\d{16}$|\d{15}(\d|X|x))$/;
+            var IDNumber = $("#xc_idNum").val();
+            console.log(IDNumber)
+            if ($("#xc_idSelect").val()==0) {
+                console.log("是身份证");
+                if (pattern.test(IDNumber)) {
+                    console.log("正确");
+                }else{
+                    alert("请填写正确的证件号码");
+                }
+            }else{
+                console.log("不是身份证");
+            }
+        }
+        
+
+
+
+
+
+        $("#xc_idNum").change(function(){
+                IDjudge1();
+                console.log("正将类型身份证");
+                if ($("#xc_idSelect").val()==0) {
+                    authentication();
+                    if ($("#xc_idNum").val().length!==0&&$("#xc_idNum").val().length==18) {
+                    birthChecked();
+                    sexChecked();
+                    console.log("调用了身份0");
+                    authentication();
+                    
+                }
+            }
+
+        })
+        $(".xc_btn").click(function(){
+            if ($("#xc_idNum").val().length==0) {
+                alert("请填写证件号");
+            }else{
+                console.log($("#birthDate").val().length)
+                if ($("#birthDate").val().length!==8) {
+                    alert("请填写正确的出生日期");
+                }else{
+
+                    
+                    if (!($("#sex_man").is(":checked")||$("#sex_woman").is(":checked"))) {
+                        alert("请选择性别");
+                    }else{
+                         applicant_age();
+                    }
+
+                       
+                }
+                
+            }
+        })
+
+        // 判断年龄
+        function applicant_age(){
+            var date = new Date();
+            var nowYear= date.getFullYear();
+            var nowMonth = date.getMonth()+1;
+            var nowDate = date.getDate();
+            var IDNumber = $("#birthDate").val();
+            var applicant_Year = IDNumber.substring(0,4);
+            var applicant_Month = IDNumber.substring(4,6);
+            var applicant_Date = IDNumber.substring(6);
+            var year_Differ=Number(nowYear)-Number(applicant_Year);
+            var month_Differ=Number(nowMonth)-Number(applicant_Month);
+            var date_Differ=Number(nowDate)-Number(applicant_Date);
+            console.log(year_Differ);
+            console.log(month_Differ);
+            console.log(date_Differ);
+            console.log("123");
+            if (year_Differ>18) {
+                console.log("年份大于18");
+                $(".xc_btn a").attr("href","passport_05.html");
+            }else if (year_Differ==18){
+                console.log("年份等于18");
+                if (month_Differ>0) {
+                    console.log("月份大于零");
+                    $(".xc_btn a").attr("href","passport_05.html");
+                }else if (month_Differ==0){
+                    console.log("月份等于零");
+                    if (date_Differ>0) {
+                        console.log("日期大于零");
+                        $(".xc_btn a").attr("href","passport_05.html");
+                    }else if (date_Differ<0) {
+                        console.log("日期小于零");
+                        $(".xc_btn a").attr("href","passport_034.html");
+                    }else{
+                        console.log("日期等于零");
+                        $(".xc_btn a").attr("href","passport_05.html");
+                    }
+                }else{
+                    console.log("月份小鱼零");
+                    $(".xc_btn a").attr("href","passport_034.html");
+                }
+            }else{
+                $(".xc_btn a").attr("href","passport_034.html");
+            }
+        }
+
+        
+        
+        
+        </script>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>公益护照</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../css/frozen.css">
+    <link rel="stylesheet" href="passport.css">
+    <script src="../lib/zepto.min.js"></script>
+    <script src="../js/frozen.js"></script>
+    
+</head>
+
+<body ontouchstart>
+        
+        <header class="ui-header ui-header-positive ui-border-b passport_nav">
+            <i class="ui-icon-return" onclick="history.back()"></i>
+            <h1>公益护照申领</h1>
+        </header>
+        </div>
+        <section class="ui-container">
+            <div class="demo-block">
+                <div class="ui-tab" id="tab1">
+                    <ul class="ui-tab-nav ui-border-b">
+                        <li class="jianhuren checkedjianhuren">监护人信息</li>
+                        <li class="jianhudanwei nocheckedjianhuren">监护单位信息</li>
+                    </ul>
+                    <ul class="ui-tab-content jianhurenxinxi" >
+                        <li class="jianhuren1">
+                            <div class="ui-form ui-border-t">
+                                <form action="#">
+                                    <div class="ui-form-item ui-border-b">
+                                        <label>
+                                            		姓名<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <input type="text" placeholder="请输入证件号码姓名">
+                                    </div>
+                                    
+                                     <div class="ui-form-item ui-border-b">
+                                    	<label class="">
+						                	监护人关系<i class="ui-txt-red">*</i>
+						                	</label>
+					                        <div class="ui-select xc_option">
+		                                        <select>
+		                                            <option selected>父母</option>
+		                                            <option>祖父母</option>
+		                                            <option>外祖父母</option>
+		                                            <option>兄姐</option>
+		                                            <option>其他</option>
+		                                        </select>
+                                       </div>
+                                    </div>
+                                    <div class="ui-form-item ui-border-b">
+                                    	<label class="">
+						                	证件类型<i class="ui-txt-red">*</i>
+						                	</label>
+					                        <div class="ui-select xc_option">
+		                                        <select class="ui-txt-muted">
+		                                            <option selected>身份证</option>
+		                                            <option>军官证</option>
+		                                            <option>护照</option>
+		                                        </select>
+                                       </div>
+                                    </div>
+                                    <div class="ui-form-item ui-border-b">
+                                        <label>
+                                            证件号码<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <input type="text" placeholder="请输入证件号码">
+                                    </div>
+                                    <div class="ui-form-item ui-border-b">
+                                        <label>
+                                            出生日期<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <input type="text" placeholder="请输入出生日期">
+                                    </div>
+                                    <div class="ui-form-item ui-form-item-radio ui-border-b">
+                                        <label>
+                                            性别<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <div style="margin-left:70px;" class="ui-form-item ui-form-item-radio ui-border-b">
+                                            <label class="ui-radio" for="radio">
+                                                <input type="radio" name="radio" value="男" checked>
+                                            </label>
+                                            <p>男</p>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <label class="ui-radio" for="radio">
+                                                <input type="radio" value="女" name="radio">
+                                            </label>
+                                            <p>女</p>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form-item  ui-border-b">
+                                        <label>
+                                            电话<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <input type="text" placeholder="请输入监护人手机号码">
+                                    </div>
+                                </form>
+                            </div>
+                    <p class="xc_promit">未成年人请完善监护人或监护单位信息</p>
+                        </li>
+                        <li class="jianhudanwei1 hid_jianhu">
+                            <div class="ui-form ui-border-t">
+                                <form action="#">
+                                    <div class="ui-form-item ui-border-b">
+                                        <label>
+                                            单位名称<i class="ui-txt-red">*&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                                        </label>
+
+                                        <input type="text" placeholder="请输入单位名称">
+                                    </div>
+                                    <div class="ui-form-item ui-border-b">
+                                        <label>
+                                            组织机构代码<i class="ui-txt-red">*</i>
+                                        </label>
+                                        <input type="text" placeholder="请输入组织机构代码">
+                                    </div>
+
+                                </form>
+                            </div>
+                    <p class="xc_promit">未成年人请完善监护人或监护单位信息</p>
+                        </li>
+                   		
+                    </ul>
+                </div>
+            
+            	
+            </div>
+            <!-- <script class="demo-script">
+            (function() {
+                var tab = new fz.Scroll('.ui-tab', {
+                    role: 'tab',
+                    autoplay: false,
+                    interval: 3000
+                });
+            })();
+            </script> -->
+            <div class="go">
+                <button class="gobtn">下一步</button>
+            </div>
+        </section>
+        <!-- /.ui-container-->
+        <script>
+            $('.ui-list li,.ui-tiled li').click(function() {
+                if ($(this).data('href')) {
+                    location.href = $(this).data('href');
+                }
+            });
+            $('.ui-header .ui-btn').click(function() {
+                location.href = 'index.html';
+            });
+            $(".jianhuren").click(function(){
+                $(".jianhuren").addClass("checkedjianhuren").removeClass("nocheckedjianhuren");
+                $(".jianhudanwei").removeClass("checkedjianhuren").addClass("nocheckedjianhuren");
+                 $(".jianhuren1").removeClass("hid_jianhu");
+                $(".jianhudanwei1").addClass("hid_jianhu");
+            });
+            $(".jianhudanwei").click(function(){
+                $(".jianhudanwei").addClass("checkedjianhuren").removeClass("nocheckedjianhuren");
+                $(".jianhuren").removeClass("checkedjianhuren").addClass("nocheckedjianhuren");
+                $(".jianhudanwei1").removeClass("hid_jianhu");
+                $(".jianhuren1").addClass("hid_jianhu");
+            });
+        </script>
+
+</body>
+
+</html>

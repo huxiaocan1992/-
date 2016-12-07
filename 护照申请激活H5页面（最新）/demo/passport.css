@@ -1,0 +1,210 @@
+body{
+    background-color: #f0f0f0 !important;
+    font-family: "微软雅黑";
+}
+.ui-container{
+    font-family: "微软雅黑";
+    background-color: #f0f0f0 !important;
+}
+.ui-select{
+    margin-left:0px !important;
+    
+}
+.ui-select select{
+    color: #999;
+}
+.ui-select option{
+    color: #333;
+}
+
+.ui-border-b,.xc_li_bottom{
+    border-bottom: 1px solid #d0d0d0;
+}
+.passport_nav{
+    background-color: #f0f0f0;
+    
+}
+.passport_nav h1{
+    font-size: 17px !important;
+    color: #004591;
+    font-family: "微软雅黑";
+}
+/*页码56*/
+.checkedjianhuren{
+    background-color: #0b52a1;
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.hid_jianhu{
+    display: none;
+}
+.nocheckedjianhuren{
+    background-color: #fff;
+    color: #0b52a1 !important;
+    font-size: 16px !important;
+}
+i.ui-icon-return{
+    color: #434343;
+}
+.jianhuren1,.jianhudanwei1{
+    height: 370px;
+}
+.jianhudanwei1 label{
+    width: 130px !important;
+}
+.jianhudanwei1 input{
+    margin-left: 20px;
+}
+form{
+    background-color: #f0f0f0 !important;
+}
+.go{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 88%;
+    left: 0;
+    text-align: center;
+    background:#f0f0f0 ;
+    clear: both;
+}
+.gobtn{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    margin:0 auto;
+    line-height:40px;
+    background: #0b52a1;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.jianhurenxinxi{
+    margin-top: 0px;
+}
+/*页码7*/
+.IDtit{
+    text-align: center;
+    color: #004591;
+    margin: 10px 0;
+}
+
+/*页码8*/
+
+.shenqing1 {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    width: 180px;
+    height: 30px;
+    margin: 5px auto;
+    /*margin-top: 20px;*/
+}
+
+.ordernum {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #004591;
+    text-align: center;
+    line-height: 30px;
+    width: 180px;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.erweima {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.erweima img {
+    width: 150px;
+    height: 150px;
+}
+
+.remind {
+    width: 250px;
+    height: 40px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin: 8px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.remind i {
+    color: #004591;
+}
+.information{
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-family: "微软雅黑";
+}
+
+/*页码9*/
+.next_step9{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 51.5%;
+    left: 0;
+    text-align: center;
+    background:#f0f0f0 ;
+    clear: both;
+}
+.acc_pwd {
+    text-align: center;
+    font-size: 18px;
+    color: #004591;
+    margin-top: 10px;
+}
+.shenqing {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    width: 270px;
+    height: 30px;
+    margin: 20px auto;    
+    color:#ff0000;
+}
+
+.ewmdl {
+    border-top: 1px solid #666;
+    height: 15px;
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+    margin-top: 230px;
+}
+
+.ewmdl h3 {
+    background-color: #F0F0F0;
+    display: block;
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    left: 75px;
+    top: -13px;
+    text-align: center
+}
+.xc_option{
+	margin-left: 95px !important;
+}
+.xc_promit{
+	text-align: center;
+	margin-top:20px;
+	line-height: 30px;
+}
+
+
+
+
+
+

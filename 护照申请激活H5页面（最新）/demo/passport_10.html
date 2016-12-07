@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title></title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="demo.css">
+        <script src="../lib/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+        <style type="text/css">
+        	body{        		
+        		background-color: #f0f0f0;
+        	}
+        	.yscx .hder{
+        		background-color: #f0f0f0;
+        	}
+        	.yscx .hder i{
+        		color: #333;
+        	}
+        	.yscx .hder h1{
+        		color: #0b52a1;
+        	}
+        	#list .cont h3{
+        		line-height: 30px;
+        		
+        	}
+        	#list .conten{
+        		background:#f0f0f0;        		
+        	}
+        	#list .cont_shm{
+        		padding-top: 15px;
+        		background-color: #fff;
+        		overflow-y: auto;
+        		
+        	}
+        	#list .cont_xuan{
+        		margin-top: 5px;
+        	}        	
+        	#list .shm_bin{
+			    width: 100%;
+			    height: 40px;
+			    position: absolute;
+			    top: 88%;
+			    left: 0;
+			    text-align: center;
+			    background:#f0f0f0 ;
+			    clear: both;
+			}
+			#list .shm_bin button{
+			    text-align: center;
+			    height: 40px;
+			    width: 300px;
+			    margin:0 auto;
+			    line-height:40px;
+			    background: #0b52a1;
+			    color: #fff;
+			    font-size: 16px;
+			    border-radius: 3px;
+			}
+        	
+        </style>
+    </head>
+    
+    <body ontouchstart>
+        <div class="yscx">        	
+	        <header class="hder ui-header ui-header-positive ui-border-b">
+	            <i class="ui-icon-return" onclick="history.back()"></i>
+	            <h1>公益护照激活说明</h1>
+	        </header>
+	        <section class="ui-container">
+	
+				<section id="list">
+				    <div class="demo-item conten">
+				        <div class="demo-block cont_shm">
+				            <div class="ui-whitespace cont">
+					            <h3>尊敬的用户：</h3>	            
+								<p class="ui-txt-justify">感谢您对平安银行的信任并购买平安理财产品。感谢您对平安银行的信任并购买平安理财产品。感谢您对平安银行的信任并购买平安理财产品。感谢您对平安银行的信任并购买平安理财产品。感谢您对平安银行的信任并购买平安理财产品。感谢您对平安银行的信任并购买平安理财产品。</p>                
+				            </div>
+				        </div>
+			            <div class="demo-block cont_xuan">
+			            	<p> 
+							    <label class="ui-checkbox-s">
+							        <input type="checkbox" name="checkbox" id="">
+							    </label>				     
+			            		我已经阅读并同意<a>《公益护照激活说明书》</a>
+							</p>            	
+			            </div>
+			            <div class="shm_bin">
+				            <button class="">下一步</button>
+				        </div>			            
+				    </div>
+				</section>
+	 
+	        </section>
+        </div>
+        <script>
+        $('.ui-list li,.ui-tiled li').click(function(){
+            if($(this).data('href')){
+                location.href= $(this).data('href');
+            }
+        });        
+    </body>
+</html>

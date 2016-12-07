@@ -1,0 +1,203 @@
+body{
+	background:#f0f0f0 !important;
+	font-family: "微软雅黑" !important; 
+}
+.logo_btn{
+	position:absolute;
+	right: 10px;
+	top:0px;
+}
+
+.IDtit{
+    text-align: center;
+    color: #004591;
+    margin: 10px 0;
+}
+.xc_container{
+	margin:  0 auto;
+	padding: 5px 10px;
+	background: #f0f0f0;
+}
+.xc_top{
+	margin-top: 45px;
+}
+.xc_li_bottom{
+	border-bottom: 1px solid #ddd;
+}
+.xc_slider .xc_h{
+	border: 0;
+	color: #0b52a1;
+	min-height: auto;
+}
+.xc_range{
+	letter-spacing:5px;;
+}
+.xc_hz_box ,.xc_radio_box{
+	padding: 5px 15px;
+}
+.xc_radio_label{
+	width: 95px;
+	float: left;
+}
+.xc_radio_title{
+	line-height: 44px;
+}
+.xc_radio{
+	margin: 0 15px;
+}
+.xc_hz_box{
+	width: 100%;
+	overflow: hidden;
+}
+.xc_ui_box{
+	width: 70%;
+	float: left;
+}
+.xc_navh{
+	margin-top: 30px;
+}
+.xc_navh1{
+	margin-top: 65px;
+}
+.xc_p{
+	padding: 5px 10px;
+	line-height: 1.5;
+}
+
+.xc_lheight{
+	display: inline-block;
+	height: 44px;
+	line-height:44px;
+}
+.xc_btn_position{
+	position:absolute;
+	top:88%;
+	left: 50%;
+	margin-left: -150px;
+	padding: 0px;
+}
+.xc_btn{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+	background: #0B52A1;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+.xc_bgcolor{
+	background: #f0f0f0;
+}
+
+/*apply02*/
+ header{
+	background: #f0f0f0 !important;
+}
+header h1{
+	color: #004591;
+}
+header .ui-border-b{
+	
+}
+form{
+	background:#f0f0f0 ;
+}
+i.ui-icon-return{
+	color: #434343;
+}
+.IDtit{
+	text-align: center;
+	color: #004591;
+	margin: 10px 0;
+}
+.ui-select{
+	margin-left:0px !important;
+	
+}
+.ui-select select{
+	color: #999;
+}
+.ui-select option{
+	color: #333;
+}
+.fl{
+	float: left;
+	background:#f0f0f0 ;
+}
+.mp{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #f0f0f0;
+	color: #333;
+	        	}
+.ui-border-b{
+	background:#f0f0f0 ;
+	border-bottom: 1px solid #d0d0d0;
+}
+.ui-form-item {
+	background:#f0f0f0 ;
+}
+.go{
+	margin-top:70px;
+	text-align: center;
+	background:#f0f0f0 ;
+	clear: both;
+}
+.gobtn{
+	text-align: center;
+	height: 40px;
+	width: 80%;
+	line-height:40px;
+	background: #0b52a1;
+	color: #fff;
+	font-size: 16px;
+}
+.ui-list > li{
+	margin-left: 0;
+	padding-left: 15px;
+	
+}
+
+
+/*付款界面*/
+.ui-list{
+	background: none;
+}
+.xc_icon{
+	display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 56px;
+    background-repeat: no-repeat;
+    background-position: center left; 
+}
+.xc_OK{
+	font-size: 46px;
+}
+.act{
+	color: #00d027;
+}
+.xc_article{
+	margin-top: 20px;
+	padding: 0px 10px;
+	background: #fff;
+}
+.xc_article h4{
+	font-size:20px;
+	font-weight: 700;
+}
+.xc_article p{
+	line-height: 2;
+	margin-bottom: 5px;
+}
+.xc_price{
+	color:#0b52a1;
+}
+.xc_number{
+	color: #ff6e20;
+}

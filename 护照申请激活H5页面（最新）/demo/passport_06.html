@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title></title>
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <link rel="stylesheet" href="../css/frozen.css">
+        <link rel="stylesheet" href="../css/pay.css">
+        <script src="../lib/zepto.min.js"></script>
+        <script src="../js/frozen.js"></script>
+    </head>
+    
+    <body ontouchstart>
+        <div class="mp">
+	        <header class="ui-header ui-header-stable ui-border-b">
+	            <i class="ui-icon-return" onclick="history.back()"></i><h1 class="ui-txt-feeds">公益捐赠 </h1>
+	        </header>
+	    	<section class="ui-container">
+			 <ul class="ui-list ui-list-text ui-border-tb">
+			    <li class=" xc_li_bottom">
+			        <div class="ui-list-info">
+			            	已选护照号码&nbsp;&nbsp;&nbsp;<span class="xc_number" >123456765</span>
+			        </div>
+			        <div class="ui-list-action xc_price">￥340</div>
+			    </li>
+			    <li class="ui-border-t xc_li_bottom tend">
+			        <div class="ui-list-info" style="height:46px;">
+			          	 <i class="xc_icon" style="background-image: url(../img/wx-icon.png);" >微信支付</i>
+			        </div>
+			        <div class="xc_OK ui-icon ui-icon-success act" style="position: relative;" >
+			        	<!--<input class="appla" type="radio" name="selectappla" value="weixin" style="opacity: 0;position: absolute;left: 0;top: 0;width: 33px;
+			        		height: 44px;display: block;" />-->
+			        </div>
+			    </li>
+			    <li class="ui-border-t xc_li_bottom tend">
+			        <div class="ui-list-info">
+			            <i class="xc_icon" style="background-image: url(../img/zfb-icon.png);" >支付宝</i>
+			        </div>
+			        <div class="xc_OK  ui-icon ui-icon-success">
+			        	<!--<input  class="appla" type="radio" name="selectappla" value="zhifubao" />-->
+			        </div>
+			    </li>
+			</ul>
+			<article class="xc_article">
+				<h4>捐赠说明</h4>
+				<p>您所捐赠的资金由...</p>
+			</article>
+			<div class="xc_btn_position">
+	        	<button class="xc_btn">下一步</button>
+	        </div>
+	    	</section><!-- /.ui-container-->
+        </div>
+    </body>
+    <script type="text/javascript">
+    	$(function(){
+//  		$(".appla").tap(function(){
+//  			var val=$("input[name='selectappla'][checked=true]")
+//  			console.log(val)
+//  		})
+$('.tend').tap(function(){
+	$('.act').removeClass('act');
+	$(this).find('.xc_OK').addClass('act')
+})
+    	})
+    </script>
+</html>
